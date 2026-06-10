@@ -65,7 +65,9 @@ export default function Footer() {
             <a href="tel:7975165470">+91 7975165470</a>
           </div>
           <div>
-            <button className={styles.ctaButton}>Get In Touch</button>
+            <a href="#contact" className={styles.ctaButton}>
+              Get In Touch
+            </a>
           </div>
         </div>
       </div>

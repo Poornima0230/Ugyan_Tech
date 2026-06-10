@@ -273,7 +273,8 @@
   gap: 1rem;
 }
 
-.socials div div {
+.socials div div,
+.socials div a {
   width: 6rem;
   height: 6rem;
 
@@ -292,7 +293,8 @@
   transition: all 0.3s ease;
 }
 
-.socials div div:hover {
+.socials div div:hover,
+.socials div a:hover {
   transform: translateY(-5px) rotate(10deg);
 
   border-color: #60a5fa;

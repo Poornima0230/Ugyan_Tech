@@ -4,13 +4,6 @@ import { LuRocket } from "react-icons/lu";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/* <div className={styles.bgIcons}>
-        <FaReact />
-        <FaCode />
-        <FaDatabase />
-        <FaCloud />
-        <SiOpenai />
-      </div> */}
       <div className={styles.backgroundIcons}>
         <span>{"</>"}</span>
         <span>{"{}"}</span>
@@ -57,10 +50,12 @@ export default function Hero() {
       </div>
 
       <div className={styles.actions}>
-        <button className={styles.primaryBtn}>
+        <a href="#services" className={styles.primaryBtn}>
           Explore Services <FaArrowRight />
-        </button>
-        <button className={styles.secondaryBtn}>Get Started Today</button>
+        </a>
+        <a href="#contact" className={styles.secondaryBtn}>
+          Get Started Today
+        </a>
       </div>
 
       <div className={styles.stats}>

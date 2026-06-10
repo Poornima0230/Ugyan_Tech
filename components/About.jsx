@@ -51,10 +51,10 @@ export default function About() {
           </p>
         </div>
 
-        <button className={styles.cta}>
+        <a href="#contact" className={styles.cta}>
           Work With Us
           <FaArrowRight />
-        </button>
+        </a>
       </div>
 
       <div className={styles.imageWrapper}>

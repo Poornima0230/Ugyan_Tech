@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
           <div className={styles.inputGroup}>
             <input
-              type="tel"
+              type="number"
               id="phone"
               name="phone"
               placeholder=" "
@@ -123,10 +123,9 @@ export default function Contact() {
               <div>
                 <FaInstagram />
               </div>
-
-              <div>
+              <a href="https://www.linkedin.com/company/ugyan-tech-solutions/">
                 <CiLinkedin />
-              </div>
+              </a>
             </div>
           </div>
         </div>
