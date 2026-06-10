@@ -1,0 +1,268 @@
+.testimonials {
+  position: relative;
+  overflow: hidden;
+
+  padding: 8rem 5rem;
+
+  background:
+    radial-gradient(circle at left, rgba(59, 130, 246, 0.12), transparent 35%),
+    radial-gradient(circle at right, rgba(139, 92, 246, 0.12), transparent 35%),
+    linear-gradient(180deg, #020617, #070d2a, #020617);
+
+  color: white;
+}
+
+.testimonials::before {
+  content: "❝";
+
+  position: absolute;
+
+  top: 2%;
+  right: 5%;
+
+  font-size: 30rem;
+
+  color: rgba(255, 255, 255, 0.02);
+
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+
+  margin: 0 auto 5rem;
+}
+
+.header h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+
+  font-weight: 900;
+
+  margin-bottom: 1rem;
+
+  background: linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  color: #cbd5e1;
+
+  line-height: 1.8;
+
+  font-size: 1.4rem;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+  -webkit-animation: scroll 25s linear infinite;
+}
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+
+.card {
+  position: relative;
+
+  width: 40rem;
+  flex-shrink: 0;
+
+  padding: 2rem;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+
+  transition: all 0.4s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  width: 120px;
+  height: 100%;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+.slider::before {
+  left: 0;
+
+  background: linear-gradient(to right, #020617, transparent);
+}
+
+.slider::after {
+  right: 0;
+
+  background: linear-gradient(to left, #020617, transparent);
+}
+.card:hover {
+  border-color: rgba(96, 165, 250, 0.4);
+
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.05),
+    rgba(139, 92, 246, 0.05)
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.logo {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.logo img {
+  object-fit: contain;
+}
+
+.stars {
+  display: flex;
+
+  gap: 0.25rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+
+  fill: #fbbf24;
+  color: #fbbf24;
+}
+
+.note {
+  color: #cbd5e1;
+
+  line-height: 1.9;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 1.15rem;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 0.3rem;
+
+  font-size: 1.5rem;
+}
+
+.role {
+  color: #93c5fd;
+
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 6rem 0rem;
+  }
+
+  .header {
+    padding: 1.2rem;
+  }
+
+  .track {
+    animation-duration: 25s;
+  }
+
+  .card {
+    width: 32rem;
+    padding: 1.75rem;
+  }
+
+  .slider {
+    /* border: 2px solid red; */
+    margin: 0;
+  }
+
+  .slider::before {
+    left: 0;
+
+    background: linear-gradient(to right, #020617, transparent 10%);
+  }
+
+  .slider::after {
+    right: 0;
+
+    background: linear-gradient(to left, #020617, transparent 10%);
+  }
+}

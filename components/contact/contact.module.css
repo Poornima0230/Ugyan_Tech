@@ -1,0 +1,330 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+
+  padding: 8rem 5rem;
+
+  background:
+    radial-gradient(circle at left, rgba(59, 130, 246, 0.12), transparent 35%),
+    radial-gradient(circle at right, rgba(139, 92, 246, 0.12), transparent 35%),
+    linear-gradient(180deg, #020617, #070d2a, #020617);
+
+  color: white;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  width: 35rem;
+  height: 35rem;
+  background: #2563eb;
+  filter: blur(180px);
+  opacity: 0.15;
+  pointer-events: none;
+  -webkit-filter: blur(180px);
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  right: -10rem;
+  bottom: -10rem;
+  width: 40rem;
+  height: 40rem;
+  background: #8b5cf6;
+  filter: blur(180px);
+  opacity: 0.15;
+  pointer-events: none;
+  -webkit-filter: blur(180px);
+}
+
+.header {
+  text-align: center;
+
+  margin: 0 auto 5rem;
+}
+
+.header h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+.container {
+  max-width: 1400px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1.3fr 0.9fr;
+
+  gap: 2rem;
+}
+
+.form {
+  padding: 2rem;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.form h2 {
+  margin-bottom: 2rem;
+
+  font-size: 2rem;
+}
+
+.inputGroup {
+  position: relative;
+
+  margin-bottom: 1.7rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+
+  padding: 1rem;
+
+  font-size: 1.5rem;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: white;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.inputGroup textarea {
+  min-height: 160px;
+
+  resize: none;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #60a5fa;
+
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+/* label floating */
+.inputGroup label {
+  position: absolute;
+
+  left: 1rem;
+  top: 1rem;
+
+  color: #94a3b8;
+
+  pointer-events: none;
+
+  transition: 0.25s ease;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label,
+.inputGroup textarea:focus + label,
+.inputGroup textarea:not(:placeholder-shown) + label {
+  top: -0.6rem;
+
+  left: 0.8rem;
+
+  font-size: 1rem;
+
+  background: #070d2a;
+
+  padding: 0 0.4rem;
+
+  color: #60a5fa;
+}
+
+.form button {
+  width: 100%;
+
+  padding: 1rem;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  color: white;
+
+  font-weight: 700;
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+}
+/* CONTACT INFO */
+
+.contactInfo {
+  padding: 2rem;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.contactInfo h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.contactInfo h2 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.infoCard {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateX(5px);
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.infoCard svg {
+  font-size: 1.8rem;
+
+  color: #60a5fa;
+  /* background: #60a5fa; */
+
+  flex-shrink: 0;
+}
+
+.infoCard h3,
+.infoCard h2 {
+  margin-bottom: 0.3rem;
+}
+
+.infoCard p,
+.infoCard a {
+  color: #cbd5e1;
+
+  text-decoration: none;
+
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+.infoCard a:hover {
+  color: #2563eb;
+}
+
+/* SOCIALS */
+
+.socials {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+
+  gap: 1rem;
+}
+
+.socials div div {
+  width: 6rem;
+  height: 6rem;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.socials div div:hover {
+  transform: translateY(-5px) rotate(10deg);
+
+  border-color: #60a5fa;
+
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+}
+
+.socials svg {
+  font-size: 2.5rem;
+
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 7rem 1.5rem;
+  }
+
+  .form,
+  .contactInfo {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+}
