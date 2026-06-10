@@ -90,7 +90,7 @@ export default function Contact() {
             <IoCallOutline />
             <div>
               <h2>Phone</h2>
-              <a href="tel:7975165470">+91 7975165470</a>
+              <a href="tel:8088651951">+91 8088651951</a>
             </div>
           </div>
           <div className={styles.infoCard}>

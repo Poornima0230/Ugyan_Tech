@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/navbar/Navbar";
 import Footer from "@/components/shared/footer/Footer";
 import { Toaster } from "sonner";
+import "aos/dist/aos.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

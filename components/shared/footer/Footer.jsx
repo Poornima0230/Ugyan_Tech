@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           <div className={styles.contactItem}>
             <IoCallOutline />
-            <a href="tel:7975165470">+91 7975165470</a>
+            <a href="tel:8088651951">+91 8088651951</a>
           </div>
           <div>
             <a href="#contact" className={styles.ctaButton}>

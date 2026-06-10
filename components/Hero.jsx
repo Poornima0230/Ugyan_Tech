@@ -60,7 +60,7 @@ export default function Hero() {
 
       <div className={styles.stats}>
         <div className={styles.stat}>
-          <h2>100+</h2>
+          <h2>20+</h2>
           <p>Projects Delivered</p>
         </div>
 
